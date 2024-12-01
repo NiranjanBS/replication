@@ -12,11 +12,6 @@
 * Single leader replication.
 * Multi leader replication.
 * Leaderless replication.
-## How to handle failed replicas?
-## What is eventual consistency?
-## Problems with replication lags?
-## Read-your-writes guarentee?
-## Monotonic read guarentee?
 ## How do we ensure all the data ends up on all the replicas?
 ![image](https://github.com/user-attachments/assets/4dcc1aa0-0104-4acc-9043-40c6a277071c)
 * Most common solution is **_Master-Slave / Leader-Follower / Active-Passive_** replication.
@@ -46,6 +41,10 @@
 * Apply the snapshot to new follower node.
 * Follower connects to leader and requests all the changes after log sequence number.
 * After processing backlog of data change stream follower is ready to server.
-## 
+## How to handle failed replicas?
+## What is eventual consistency?
+## Problems with replication lags?
+## Read-your-writes guarentee?
+## Monotonic read guarentee?
 
 
